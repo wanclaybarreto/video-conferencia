@@ -1,0 +1,23 @@
+<div class="container mt-4">
+    <div class="mb-4">
+        Código da sala: <b><%= params[:id] %></b>
+    </div>
+
+    <span class="span-title-video">Vídeo compartilhado pelo criador da sala:</span>
+
+    <div class="shared_video">
+        <iframe src="<%= @room.video_url %>" title="Vídeo" allowfullscreen></iframe>
+    </div>
+
+    <span class="span-title-members">Pessoa na sala:</span>
+
+    <div class="box-videos row">
+        <div id="videos"
+            class="col"
+            data-controller="vonage"
+            data-vonage-token="<%= @token %>"
+            data-vonage-api-key="<%= ENV['VONAGE_API_KEY'] %>"
+            data-vonage-session-id="<%= @room.vonage_session_id %>"
+            data-vonage-name="<%= params[:user_name] %>"></div>
+    </div>
+</div>

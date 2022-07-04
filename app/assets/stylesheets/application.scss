@@ -1,0 +1,30 @@
+$primary: #4AC4F3;
+$light: #EDF5FF;
+$dark: #202942;
+
+$body-bg: $light;
+
+$body-color: #858585;
+
+$headings-color: $dark;
+
+$enable-responsive-font-sizes: true;
+
+$border-radius: 10px;
+
+$link-decoration: none;
+
+$enable-negative-margins: true;
+
+@import "bootstrap/scss/bootstrap"; //Importa o Bootstrap do node modules
+
+@import "home";
+@import "rooms";
+
+.alert {
+    width: 80%;
+    margin-bottom: 1.5rem;
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+}

@@ -1,0 +1,48 @@
+.shared_video {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.2);
+    background-image: url(image_path('bg_shared_video.png'));
+    background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.shared_video iframe {
+    max-width: 400px;
+    width: 100%;
+    height: 35vh;
+}
+
+.box-videos {
+    margin: 20px 0;
+    height: 250px;
+}
+
+#videos {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.OT_root {
+    height: 100% !important;
+    border-radius: 1rem;
+}
+
+
+
+@media (max-width: 767px) and (min-width: 451px) {
+    #videos {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 450px) {
+    #videos {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}

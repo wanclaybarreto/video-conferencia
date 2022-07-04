@@ -1,0 +1,90 @@
+:root {
+    --primary: #4AC4F3;
+    --light: #EDF5FF;
+    --dark: #202942;
+}
+
+
+
+.container {
+    overflow: hidden;
+}
+
+
+
+h1 {
+    font-weight: bold;
+}
+
+
+
+.btn {
+    transition: .5s;
+}
+
+.btn:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+
+.btn.btn-primary {
+    color: var(--light);
+}
+
+.btn.btn-light {
+    color: var(--primary);
+}
+
+
+
+.navbar {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.navbar .navbar-brand h1 {
+    color: #FFFFFF;
+}
+
+.navbar .navbar-brand img {
+    max-height: 60px;
+    transition: .5s;
+}
+
+
+
+.hero-header {
+    margin-bottom: 6rem;
+    padding: 9rem 0;
+    background: url(image_path('bg-bottom.png')) center bottom no-repeat;
+}
+
+
+
+.text-footer {
+    position: absolute;
+    right: 3rem;
+    bottom: -4rem;
+}
+
+
+
+.modal-backdrop {
+    z-index: 998 !important;
+}
+
+
+
+@media (max-width: 991.98px) {
+    .navbar-light .navbar-brand img {
+        max-height: 45px;
+    }
+
+    .hero-header {
+        padding: 6rem 0 9rem 0;
+    }
+}
+
+@import "animate";
