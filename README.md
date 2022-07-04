@@ -1,6 +1,6 @@
 <h1>VÍDEO CONFERÊNCIA</h1>
 
-Sistema de vídeo conferência, transmissão de aúdio (microfone) e vídeo (webcam).
+Sistema para assistir vídeos de forma compartilhada em reuniões online (vídeo conferência).
 
 Tecnologias utilizadas: Ruby, Rails, Opentok Vonage Video API, Dotenv, SQLite, Javascript, Stimulus, HTML, CSS/SCSS, Bootstrap.
 
