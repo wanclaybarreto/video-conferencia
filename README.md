@@ -37,4 +37,4 @@ deverá receber a API_SECRET do Vonage Video API.
 
 <h2>Como acessar a aplicação:</h2>
 
-A aplicação foi publicada no Heroku. É possível acessá-la através do seguinte link: .
+A aplicação foi publicada no Heroku. É possível acessá-la através do seguinte link: https://wbvideoconferencia.herokuapp.com/.
